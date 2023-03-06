@@ -41,6 +41,9 @@ INSERT INTO Lupulo values
 
 SELECT * FROM Lupulo;
 
+INSERT INTO Lupulo values
+(null, 'Robson-Enterprises', 12);
+
 
 
 
