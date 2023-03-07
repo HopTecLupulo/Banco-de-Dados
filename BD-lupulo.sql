@@ -1,4 +1,5 @@
-
+CREATE DATABASE lupulo;
+USE lupulo;
 CREATE TABLE Lupulo (
 idLupulo int primary key auto_increment,
 tipo varchar(80),
@@ -38,6 +39,10 @@ INSERT INTO Lupulo values
 (null, 'tropical', 12),
 (null, 'dragon', 14),
 (null, 'galaxy', 16);
+
+INSERT INTO Lupulo VALUES
+	(null, 'amarillo', 15),
+    (null, 'mosaic', 14);
 
 SELECT * FROM Lupulo;
 
