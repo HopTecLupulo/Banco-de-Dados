@@ -39,8 +39,13 @@ INSERT INTO Lupulo values
 (null, 'tropical', 12),
 (null, 'dragon', 14),
 (null, 'galaxy', 16);
+
 INSERT INTO Lupulo VALUES
 (null, 'centennial', 20);
+
+INSERT INTO Lupulo VALUES
+   (null, 'Ahtanum', 16),
+   (null, 'Fuggle', 14);
 
 INSERT INTO Lupulo VALUES
 	(null, 'amarillo', 15),
