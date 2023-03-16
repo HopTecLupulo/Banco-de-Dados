@@ -134,9 +134,15 @@ update Sensor set status_sensor = 'Inativo'
 update Sensor set status_sensor = 'Inativo'
 	where id_sensor = 8 or id_sensor = 7 or id_sensor = 6;
     
-
+INSERT INTO SENSOR VALUES
+(NULL,'12','Ativo'),
+(NULL,'13','Ativo'),
+(NULL,'14','Inativo'),
+(NULL,'15','Ativo');
+    
+SELECT * FROM Sensor WHERE status_sensor = 'Inativo';
+SELECT * FROM Sensor WHERE status_sensor = 'Ativo';
 SELECT * FROM Lupulo;
 SELECT * FROM Cadastro;
 SELECT * FROM Sensor;
 SELECT * FROM Dados;
-
