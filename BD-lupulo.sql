@@ -146,3 +146,21 @@ SELECT * FROM Lupulo;
 SELECT * FROM Cadastro;
 SELECT * FROM Sensor;
 SELECT * FROM Dados;
+
+
+
+INSERT INTO Dados Values
+	(null,'2023-06-06 12:00:00',201),
+	(null,'2023-06-06 12:30:00',190),
+ 	(null,'2023-06-06 18:00:00',105),
+	(null,'2023-06-06 18:30:00',85);
+    
+INSERT INTO Lupulo VALUES
+	(null,'Tropicalia',11),
+    (null,'Patagonia',13);
+
+UPDATE Lupulo SET horas_luz_dia=12
+	WHERE idLupulo=18;
+
+
+    
