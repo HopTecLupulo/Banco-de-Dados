@@ -7,13 +7,14 @@ horas_luz_dia int
 );
 
 INSERT INTO Lupulo VALUES
-	(null, 'Citra', 12),
-    (null, 'Cascade', 13),
-    (null, 'Galaxy', 14),
+	(null, 'Citra', 13),
+    (null, 'Cascade', 14),
     (null, 'Amarillo', 15),
-	(null, 'Supinpa', 14),
-    (null, 'jiraya', 12),
-    (null, 'Jimbo', 14);
+	(null, 'Tropical', 16),
+	(null, 'Dragon', 13),
+	(null, 'Galaxy', 14),
+    (null, 'Centennial', 15),
+    (null, 'Mosaic', 16);
 
 CREATE TABLE Cadastro (
 id_cliente int primary key auto_increment,
@@ -27,17 +28,15 @@ endereco varchar(80),
 UF varchar(2)
 );
 
-DROP TABLE Cadastro;
-
 INSERT INTO Cadastro VALUES
-	(null, '12.345.678/0001-00',null , 'AFGC Produtores de Lúpulo Ltda.', 'afgc@produtores.com', '1234-0001', '12345-000', 'Av. Xampons Xamps, 123', 'SP'),
-    (null, '12.345.678/0001-01',null , 'Sayajins Lúpulos Inc.', 'sayalupulos@dbzinc.com', '1234-0002', '12345-001', 'Av. Sayajins, 456', 'MG'),
-    (null, '12.345.678-0001-02',null , 'Obiwan Kenobi Lúpulos e Produção Ltda.', 'obiwan@lupuloprod.com', '1234-0003', '12345-002','Av. Baby Yoda, 789', 'SP'),
-    (null, '15.848.984-0001-01',null , 'Empresa1', 'email1@gmail.com', '1354-4772', '5143-5576', 'AV pamonha', 'MT'), 
-    (null, '12.098.984-0001-01',null , 'Empresa2', 'email2@gmail.com', '8187-7821', '8756-9856', 'Av Rodrigues', 'SP'),
-    (null, '65.568.984-0001-01',null , 'Empresa3', 'email3@gmail.com', '8752-9875', '9813-1249', 'Av Nostalgia', 'PA'),
-    (null, '41.848.124-0001-01',null , 'Empresa4', 'email4@gmail.com', '5786-2158', '8753-6524', 'Av beirut', 'AM'),
-    (null, '12.541.984-0001-01',null , 'Empresa5', 'email5@gmail.com', '5887-6371', '8754-9875', 'Av Gonzaga', 'PI');
+	(null, '12.345.678/0001-00',null , 'Empresa6', 'email6@gmail.com', '1354-4772', '5143-5576', 'Av Empresa 6', 'SP'), 
+    (null, '12.345.678/0001-01',null , 'Empresa7', 'email7@gmail.com', '1354-4772', '5143-5576', 'Av Empresa 7', 'RJ'), 
+    (null, '12.345.678-0001-02',null , 'Empresa8', 'email8@gmail.com', '1354-4772', '5143-5576', 'Av Empresa 8', 'MT'), 
+    (null, '15.848.984-0001-01',null , 'Empresa1', 'email1@gmail.com', '1354-4772', '5143-5576', 'Av Empresa 1', 'MS'), 
+    (null, '12.098.984-0001-01',null , 'Empresa2', 'email2@gmail.com', '8187-7821', '8756-9856', 'Av Empresa 2', 'SP'),
+    (null, '65.568.984-0001-01',null , 'Empresa3', 'email3@gmail.com', '8752-9875', '9813-1249', 'Av Empresa 3', 'PA'),
+    (null, '41.848.124-0001-01',null , 'Empresa4', 'email4@gmail.com', '5786-2158', '8753-6524', 'Av Empresa 4', 'AM'),
+    (null, '12.541.984-0001-01',null , 'Empresa5', 'email5@gmail.com', '5887-6371', '8754-9875', 'Av Empresa 5', 'PI');
     
 CREATE TABLE Sensor (
 id_sensor int primary key auto_increment,
@@ -59,7 +58,6 @@ id_dados int primary key auto_increment,
 dia datetime,
 qtd_lumens float
 )auto_increment=10000;
-
 
 INSERT INTO Dados VALUE
 	(null, '2023-03-03 12:30:00', 500),
@@ -146,8 +144,6 @@ SELECT * FROM Lupulo;
 SELECT * FROM Cadastro;
 SELECT * FROM Sensor;
 SELECT * FROM Dados;
-
-
 
 INSERT INTO Dados Values
 	(null,'2023-06-06 12:00:00',201),
