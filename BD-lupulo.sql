@@ -60,12 +60,13 @@ dia datetime,
 qtd_lumens float
 )auto_increment=10000;
 
+
 INSERT INTO Dados VALUE
 	(null, '2023-03-03 12:30:00', 500),
     (null, '2023-03-03 12:45:00', 550),
     (null, '2023-03-03 13:00:00', 600),
     (null, '2010-12-05 12:00:00', 19),
-    (null, '2021-13-04 14:08:30', 30),
+    (null, '2021-11-04 14:08:30', 30),
     (null, '2005-08-04 13:09:45', 49),
     (null, '2009-09-08 09:08:48', 12),
     (null, '2023-03-03 14:00:00', 500);
@@ -87,7 +88,55 @@ INSERT INTO Lupulo VALUES
 	(null, 'amarillo', 15),
     (null, 'mosaic', 14);
 
+insert into Lupulo values
+	(null, 'Admiral',16);
+    
+insert into Lupulo values
+	(null, 'Spalt', 13);
+    
+update Lupulo set tipo = 'Zeus'
+	where idLupulo = 6;
+    
+update Lupulo set tipo = 'Tettnang'
+	where idLupulo = 11;
+    
+delete from Lupulo where idLupulo = 1;
+
+delete from Lupulo where idLupulo = 5;
+
+delete from Lupulo where idLupulo = 7;
+
+select * from Lupulo where tipo like 'C%';
+
+select * from Lupulo where tipo like '%l';
+
+select tipo from Lupulo 
+	order by tipo;
+
+select tipo from Lupulo 
+	order by tipo desc;
+
+insert into Sensor values
+	(null, 008, 'Ativo'),
+    (null, 009, 'Ativo'),
+    (null, 010, 'Inativo'),
+    (null, 011, 'Inativo');
+
+update Sensor set status_sensor = 'Inativo'
+	where id_Sensor = 1;
+    
+update Sensor set status_sensor = 'Ativo'
+	where id_Sensor = 2;
+
+update Sensor set status_sensor = 'Inativo'
+	where id_sensor = 3 or id_sensor = 4;
+
+update Sensor set status_sensor = 'Inativo'
+	where id_sensor = 8 or id_sensor = 7 or id_sensor = 6;
+    
+
 SELECT * FROM Lupulo;
 SELECT * FROM Cadastro;
 SELECT * FROM Sensor;
 SELECT * FROM Dados;
+
